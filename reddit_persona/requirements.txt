@@ -1,0 +1,3 @@
+IndicoIo==0.16.1
+praw==3.5.0
+simplejson==3.8.2

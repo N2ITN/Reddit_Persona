@@ -1,0 +1,302 @@
+It's not practical to enforce such a rule. There are plenty of business on Reddit representing themselves legitimately, and there are plenty who masquerade as organic users. I think it's wiser to incentivize businesses to be transparent about it.  Thanks for the feedback. We reverted the sticky behavior a little while ago. > Do you feel that redditors are increasingly quick to jump to conspiracy theory conclusions when any change is made? 
+
+Quick? Yes. Increasingly? I'd say they've always been pretty quick. It only affects Hot. Agreed.
+
+> Many of us slack at work and browse reddit
+
+At least I can claim it's work. Sort of, but r/all is sorted based on absolute hotness, which means a post in r/funny that has 10k upvotes and 5k downvotes will be ranked higher than a post in r/sewerhorse that has 30 upvotes and no downvotes. > Can you expand on what you mean by 'having less evil?'
+
+We've made a lot of progress fighting spam, Account Take Overs (ATOs), and reported abuse over the past few months. Our changes are community agnostic. It was a problem. A smaller problem, but still a problem. As I mentioned in my post, r/all has gone through waves of being overwhelmed by a specific community many, many times over the years. Sometimes it's healthy, sometimes it's funny, most of the time it's annoying, particularly during election years. You'll see fewer powers from the same community. This is one of those cases where we might be throwing out some of the good with the bad. We'll keep a watch during major events and see how it feels. I don't believe r/all or our current front page is the best solution for Reddit, but it's the best we have right now. So, that's approximately how the current front page works. We normalize the scores and sort by the most outstanding. It's limited to defaults / subscriptions, though.
+
+You basically describe the new frontpage algorithm I've been fantasizing about. We started work on this, in fact, but we re-allocated that brainpower (u/KeyserSosa) to focus on anti-evil for a while. We have since hired more brainpower and have less evil, so I'm hopeful we can get back to it soon. Game day threads should still work if they are self posts, which most are, by the way. It's just for the specific rendering of the r/all listing. So, it'll affect all communities with r/all itself, but not on the listings for the actual communities. Not sure if I'm answering the question you're asking... No news to share, but it's very much on my mind. I'd really like communities to come and go organically. Right now, we (Reddit Inc), do the choosing, and I don't like playing kingmaker.
+
+We have communities that come and go quickly (around major world events); rise and fall over the course of months (r/nba, r/gameofthrones); and communities that stay popular for years and years (r/iama, r/AskReddit). We'd like to be able to account for all of these situations. Thanks for the feedback. We're still thinking about stickies, and will likely make more changes. In the meantime, sorry we upset your usage of it. Yes, we'll expose filtering to everyone in the near future.
+
+In your mind, what's the difference between filtering and blocking? As a moderator of r/circlejerk, I resent that. Found them. Thank you. Honestly, I'm quite upset myself. As a user, I was disappointed that when I wanted to learn what happened in Orlando, and I found a lot of infighting bullshit. We're still getting to the bottom of it all. Fortunately, the [AskReddit](https://www.reddit.com/r/AskReddit/comments/4nqnrm/breaking_news_orlando_nightclub_massshooting/) was quite good.
+
+All of us at Reddit are committed to making sure this doesn't happen again, and we're working with the mods to do so. We have historically stayed hands off and let these situations develop, but in this case we should have stepped in. Next time we will get involved sooner to make sure things don't go off the rails.
+
+
+ Removed the mod-only rule. Thanks for the feedback. I'd say it's going exactly as expected. I'm not a fan of defaults in general. They made sense at the time, but we've outgrown them. They create a few problems, the most important of which is that new communities can't grow into popularity. They also assume a one-size-fits all editorial approach, and we can do better now. > What if stickied posts just didn't show up in /r/all?
+
+We don't want to ruin game and episode threads. My understanding is it was a new account from an old mod. His original account is also gone. He stepped down about a year ago when he got a new job, and returned a few months ago. These are good points. We're hearing the feedback and will discuss.
+
+edit: we removed the moderator rule.  Here's what happened with Donald Trump's AMA on r/all I’m going to do my best to address why the Donald Trump AMA post fell down the rankings on r/all so quickly. Despite being one of Reddit's most controversial posts ever, it was a successful AMA.
+
+The short for answer is because of anti-cheating techniques that we have used for many years. While a post is young, the score we display is not the same as the score we sort by. We do this so that spammers, cheaters, and brigaders don’t know if their tactics are working. A vote – valid or not – appears to count, but over time the displayed score becomes more accurate. [This affects all posts the same](https://www.reddit.com/r/TheoryOfReddit/comments/z1sfn/one_minute_obamas_ama_karma_score_was_16000_a/), and has for [a long time](https://www.reddit.com/r/changelog/comments/3g6ghn/reddit_change_the_scores_of_extremelypopular/).
+
+We saw this play out again on Donald Trump’s AMA today. While the post did receive many [upvotes](https://i.redd.it/ok76t3hj1wbx.png) initially, it was also one of the most controversial posts ever on Reddit, and received nearly as many downvotes. We did work with the r/the_donald mod team to ensure this AMA ran smoothly for everyone involved.
+
+Overall, please keep in mind the AMA was a success. It was seen by many thousands of people, generated thousands of comments on the site, and has spurred many discussions off of Reddit itself. You should know only 4% of Reddit actually visits r/all, so this post’s ranking in that listing had practically no effect on the overall success of the AMA.
+
+As always, thank you for redditing and for participating in the AMA.Let’s all have a town hall about r/all Hi All,
+
+A few days ago, we talked about a few technological and process changes we would be working on in order to improve your Reddit experience and ensure access to timely information is available.
+
+Over the last day we rolled out a behavior change to r/all. The r/all listing gives us a glimpse into what is happening on all of Reddit independent of specific interests or subscriptions. In many ways, r/all is a reflection of what is happening online in general. It is culturally important and drives many conversations around the world.
+
+The changes we are making are to preserve this aspect of r/all—our specific goal being to prevent any one community from dominating the listing. The algorithm change is fairly simple—as a community is represented more and more often in the listing, the hotness of its posts will be increasingly lessened. This results in more variety in r/all.
+
+Many people will ask if this is related to r/the_donald. The short answer is no, we have been working on this change for a while, but I cannot deny their behavior hastened its deployment. We have seen many communities like r/the_donald over the years—ones that attempt to dominate the conversation on Reddit at the expense of everyone else. This undermines Reddit, and we are not going to allow it. 
+
+Interestingly enough, r/the_donald was already getting downvoted out of r/all yesterday morning before we made any changes. It seems the rest of the Reddit community had had enough. Ironically, r/EnoughTrumpSpam was hit harder than any other community when we rolled out the changes. That’s Reddit for you. ¯\\\_(ツ)_/¯ 
+
+As always, we will keep an eye out for any unintended side-effects and make changes as necessary. Community has always been one of the very best things about Reddit—let’s remember that. Thank you for reading, thank you for Reddit-ing, let’s all get back to connecting with our fellow humans, sharing ferret gifs, and making the Reddit the most fun, authentic place online.
+
+Steve
+
+u: I'm off for now. Thanks for the feedback! I'll check back in a couple hours.Let's talk about Orlando Hi All,
+
+What happened in Orlando this weekend was a national tragedy. Let’s remember that first and foremost, this was a devastating and visceral human experience that many individuals and whole communities were, and continue to be, affected by. In the grand scheme of things, this is what is most important today.
+
+I would like to address what happened on Reddit this past weekend. Many of you use Reddit as your primary source of news, and we have a duty to provide access to timely information during a crisis. This is a responsibility we take seriously.
+
+The story broke on r/news, as is common. In such situations, their community is flooded with all manners of posts. Their policy includes removing duplicate posts to focus the conversation in one place, and removing speculative posts until facts are established. A few posts were removed incorrectly, which have now been restored. One moderator did cross the line with their behavior, and is no longer a part of the team. We have seen the accusations of censorship. We have investigated, and beyond the posts that are now restored, have not found evidence to support these claims.
+
+Whether you agree with r/news’ policies or not, it is never acceptable to harass users or moderators. Expressing your anger is fine. Sending death threats is not. We will be taking action against users, moderators, posts, and communities that encourage such behavior.
+
+We are working with r/news to understand the challenges faced and their actions taken throughout, and we will work more closely with moderators of large communities in future times of crisis. We–Reddit Inc, moderators, and users–all have a duty to ensure access to timely information is available.
+
+In the wake of this weekend, we will be making a handful of technology and process changes:
+
+* Live threads are the best place for news to break and for the community to stay updated on the events. We are working to make this more timely, evident, and organized.
+* [We’re introducing a change to Sticky Posts](https://www.reddit.com/r/changelog/comments/4ny8y6/renaming_sticky_posts_to_announcements/): They’ll now be called Announcement Posts, which better captures their intended purpose; they will only be able to be created by moderators; and they must be text posts. Votes will continue to count. We are making this change to prevent the use of Sticky Posts to organize bad behavior.
+* We are working on a change to the r/all algorithm to promote more diversity in the feed, which will help provide more variety of viewpoints and prevent vote manipulation.
+* We are nearly fully staffed on our Community team, and will continue increasing support for moderator teams of major communities.
+
+Again, what happened in Orlando is horrible, and above all, we need to keep things in perspective. We’ve all been set back by the events, but we will move forward together to do better next time. AMA about my darkest secrets Hi All,
+
+We haven’t done one of these in a little while, and I thought it would be a good time to catch up.
+
+We’ve launched a [bunch of stuff](https://www.reddit.com/r/changelog) recently, and we’re hard at work on lots more: m.reddit.com improvements, the next versions of Reddit for iOS and Android, moderator mail, relevancy experiments (lots of [little tests](https://www.reddit.com/r/changelog/comments/4jzit9/reddit_change_several_small_tests_to_improve_user/) to improve experience), account take-over prevention, technology improvements so we can move faster, and–of course–hiring.
+
+I’ve got a couple hours, so, ask me anything!
+
+Steve
+
+edit: Thanks for the questions! I'm stepping away for a bit. I'll check back later.A New Challenger Appears! Today we are excited to announce that [Philippe Beaudette](https://www.reddit.com/u/AchievementUnlockd) has joined us to lead our Community team. He comes from Wikipedia by way of Wikia. At the Wikimedia Foundation (which hosts and supports Wikipedia, among other sites) he was responsible for the team that did community management, user trust and safety, and strategic change management, guiding the community through a time of immense growth and maturation. He spent almost 7 years there, as one of their first community hires, and managed to have his fingers on a huge number of projects, from fundraising (raising money from nearly every country in the world and accepting Wikipedia’s first donation from Antarctica) to community governance and their international elections processes–while dealing with communities working in almost 200 different languages.  He’s particularly proud to have led their community interactions around a worldwide [24 hour site shut-down](http://www.huffingtonpost.com/2012/01/17/wikipedia-blackout_n_1212096.html?slideshow=true) to drive awareness of the SOPA bill two years ago, an effort that Reddit also joined.
+
+After leaving Wikipedia, Philippe joined Wikia and ran the Community Support and Engagement team there, supporting Wikia’s 350,000 fan-created communities. We are honored to have him on our team. Please welcome Philippe!
+
+In addition to Philippe, we have brought on an additional five members to the Community and Trust and Safety teams this week. See if you can collect them all!Admin released from captivity, reintroduced to Reddit community I am sad to share that u/krispykrackers is leaving Reddit. Over the past five years, she has done an incredible amount of work for us and the Reddit community. She has been the face of our Community team at Reddit; helped us write many of our policies and was indispensable working through countless tricky situations; and she lead our efforts in support of Extra Life, raising hundreds of thousands of dollars for Children’s Miracle Network Hospitals. She has been a friend to me and many others here. While we are sad to see her go, we wish her the best going forward.
+
+Actually replacing Kristine is impossible, but next Monday, four (maybe five!) new members of our Community and Trust and Safety teams will be starting, which will give the team even more horsepower.A few updates on what has been keeping us busy Hi All,
+
+I want to give you all an update with the things that are keeping us busy, and hopefully as a result, making you less busy:
+
+* **Spam**: Last quarter we saw a huge increase in spam, including a handful of heavy attacks. We diverted resources to combat this, and we have made quite a bit of progress, lowering user reported spam by over 60% from its high point last quarter. We still have plenty of work to do, but we are making steady progress. Removing as spam or reporting as such are still the most effective ways to help.
+
+* **Account Take-Overs** (ATOs): In response to our improved spam-fighting measures, the bad-guys have been targeting existing accounts, compromising them for the purpose of spamming and vote cheating. We are fighting ATOs on the engineering side, but ATOs also create a burden on our community team to notify affected users, send password reset emails, etc. We are working on automating the notification and recovery processes to free up our community managers. The root cause of the issue is poor passwords. Please use strong and unique passwords.
+
+* **Support Backlog**: Because of the aforementioned issues, our community team is swamped with support tickets. We are doing a good job keeping up with the incoming flow, but we do have a backlog that is taking time to work through. We are sorry for any delays. The good news is we have a number of new people joining the team over the next few weeks that will help.
+
+* **Modmail**: I am happy to report that we finally have a team dedicated to working on a new system for moderator mail. To this point, we have tried a number of approaches and have had a handful of false starts, but we have not made the sort of progress we would like. The current system is a series of hacks built on an old code base, and because of this, we have decided to build modmail as a new, separate system. This will allow us to develop it without disrupting your current workflows. We know this is where you spend a lot of your time, and we are working hard to make it more effective.
+
+We appreciate all you do for Reddit as moderators, and we appreciate seeing the questions you ask in this community. We are particularly thankful for those of you who jump in and help the other moderators here and elsewhere.
+
+– The Reddit TeamFor your reading pleasure, our 2015 Transparency Report In 2014, we published our first Transparency Report, which can be found [here](http://www.reddit.com/wiki/transparency/2014). We made a commitment to you to publish an annual report, detailing government and law enforcement agency requests for private information about our users. In keeping with that promise, we’ve published our [2015 transparency report](https://www.reddit.com/wiki/transparency/2015). 
+
+We hope that sharing this information will help you better understand our [Privacy Policy](https://www.reddit.com/help/privacypolicy) and demonstrate our commitment for Reddit to remain a place that actively encourages authentic conversation.
+
+Our goal is to provide information about the number and types of requests for user account information and removal of content that we receive, and how often we are legally required to respond. This isn’t easy as a small company as we don’t always have the tools we need to accurately track the large volume of requests we receive. We will continue, when legally possible, to inform users before sharing user account information in response to these requests.
+
+In 2015, we did not produce records in response to 40% of government requests, and we did not remove content in response to 79% of government requests.
+
+In 2016, we’ve taken further steps to protect the privacy of our users. We joined our industry peers in an amicus brief [supporting Twitter](https://upload.wikimedia.org/wikipedia/foundation/3/3d/Twitter_versus_Lynch_Amicus_Brief_February_2016.pdf), detailing our desire to be honest about the national security requests for removal of content and the disclosure of user account information.
+
+In addition, we joined an amicus brief [supporting Apple](http://images.apple.com/pr/pdf/Airbnb_Atlassian_Automattic_CloudFlare_eBay_GitHub_Kickstarter_LinkedIn_Mapbox_Medium_Meetup_Reddit_Square_Squarespace_Twilio_Twitter_and_Wickr.pdf) in their fight against the government's attempt to force a private company to work on behalf of them. While the government asked the court to [vacate the court order](http://www.nytimes.com/interactive/2016/03/28/technology/document-us-filing-dropping-apple-case.html) compelling Apple to assist them, we felt it was important to stand with Apple and speak out against this unprecedented move by the government, which threatens the relationship of trust between a platforms and its users, in addition to jeopardizing your privacy. 
+
+We are also excited to announce the launch of our [external law enforcement guidelines](https://www.reddit.com/wiki/law_enforcement_guidelines). Beyond clarifying how Reddit works as a platform and briefly outlining how both federal and state law enforcements can compel Reddit to turn over user information, we believe they make very clear that we adhere to strict standards. 
+
+We know the success of Reddit is made possible by your trust. We hope this transparency report strengthens that trust, and is a signal to you that we care deeply about your privacy.
+
+(I'll do my best to answer questions, but as with all legal matters, I can't always be completely candid.)
+
+edit: I'm off for now. There are a few questions that I'll try to answer after I get clarification.
+Reddit in 2016 Hi All,
+
+Now that 2015 is in the books, it’s a good time to reflect on where we are and where we are going. Since I returned last summer, my goal has been to bring a sense of calm; to rebuild our relationship with our users and moderators; and to improve the fundamentals of our business so that we can focus on making you (our users), those that work here, and the world in general, proud of Reddit. Reddit’s mission is to help people discover places where they can be themselves and to empower the community to flourish.
+
+2015 was a big year for Reddit. First off, we cleaned up many of our external policies including our Content Policy, Privacy Policy, and API terms. We also established internal policies for managing requests from law enforcement and governments. Prior to my return, [Reddit took an industry-changing stance on involuntary pornography](https://www.reddit.com/r/announcements/comments/2x0g9v/from_1_to_9000_communities_now_taking_steps_to/).
+
+Reddit is a collection of communities, and the moderators play a critical role shepherding these communities. It is our job to help them do this. We have shipped a [number of improvements](https://www.reddit.com/r/modnews/new/) to these tools, and while we have a long way to go, I am happy to see steady progress.
+
+Spam and abuse threaten Reddit’s communities. We created a Trust and Safety team to focus on abuse at scale, which has the added benefit of freeing up our Community team to focus on the positive aspects of our communities. We are still in transition, but you should feel the impact of the change more as we progress. We know we have a lot to do here.
+
+I believe we have positioned ourselves to have a strong 2016. A phrase we will be using a lot around here is "Look Forward." Reddit has a long history, and it’s important to focus on the future to ensure we live up to our potential. Whether you access it from your desktop, a mobile browser, or a native app, we will work to make the Reddit product more engaging. Mobile in particular continues to be a priority for us. Our new Android app is going into beta today, and our new iOS app should follow it out soon.
+
+We receive many requests from law enforcement and governments. We take our stewardship of your data seriously, and we know transparency is important to you, which is why we are putting together a Transparency Report. This will be available in March.
+
+This year will see a lot of changes on Reddit. Recently we built an A/B testing system, which allows us to test changes to individual features scientifically, and we are excited to put it through its paces. Some changes will be big, others small and, inevitably, not everything will work, but all our efforts are towards making Reddit better. We are all redditors, and we are all driven to understand why Reddit works for some people, but not for others; which changes are working, and what effect they have; and to get into a rhythm of constant improvement. We appreciate your patience while we modernize Reddit.
+
+As always, Reddit would not exist without you, our community, so thank you. We are all excited about what 2016 has in store for us.
+
+–Steve
+
+edit: I'm off. Thanks for the feedback and questions. We've got a lot to deliver on this year, but the whole team is excited for what's in store. We've brought on a bunch of new people lately, but our biggest need is still hiring. If you're interested, please check out https://www.reddit.com/jobs.Introducing new API terms Today we are introducing standardized [API Terms of Use](/wiki/api). You, our community of developers, are important to us, and have been instrumental to the success of the Reddit platform. First and foremost, we want to reaffirm our commitment to providing (and improving!) a public API.
+
+There are a couple of notable changes to the API terms that I’d like to highlight. The first is that we are requesting all users of the API to register with us. This provides a point of contact for when we have important updates to share; provides a point of contact for when things go wrong; and helps us prevent abuse.
+
+We are also no longer requiring a special licensing agreement to use our API for commercial purposes. We do request that you seek approval for your monetization model in the registration process.
+
+We have added clarity about the types of things that the API is not intended for–namely applications that promote illegal activity, disrupt core Reddit functionality, or introduce security risks. But you weren’t doing any of these things anyway.
+
+We still require users of our API to comply with our User Agreement, Privacy Policy, API Usage Limits, and any other applicable laws or regulations. We will continue to require the use of OAuth2.  We understand moving to OAuth2 can take time, so we are giving developers until March 17th to make this change.
+
+We look forward to working with you more to create great experiences for our communities. There are many wonderful projects built on our API, and we would love to see even more. Thank you for all that you do.
+
+You can contact the api@reddit.com alias to ask questions about the API service.We are updating our Privacy Policy (effective Jan 1, 2016) In a little over a month we’ll be updating our [Privacy Policy](https://www.reddit.com/help/privacypolicy). We know this is important to you, so I want to explain what has changed and why.
+
+Keeping control in your hands is paramount to us, and this is our first consideration any time we change our privacy policy. Our overarching principle continues to be to request as little personally identifiable information as possible. To the extent that we store such information, we do not share it generally. Where there are exceptions to this, notably when you have given us explicit consent to do so, or in response to legal requests, we will spell them out clearly.
+
+The new policy is functionally very similar to the previous one, but it’s shorter, simpler, and less repetitive. We have clarified what information we collect automatically (basically anything your browser sends us) and what we share with advertisers (nothing specific to your Reddit account).
+
+One notable change is that we are increasing the number of days we store IP addresses from 90 to 100 so we can measure usage across an entire quarter. In addition to internal analytics, the primary reason we store IPs is to fight spam and abuse. I believe in the future we will be able to accomplish this without storing IPs at all (e.g. with hashing), but we still need to work out the details.
+
+In addition to changes to our Privacy Policy, we are also beginning to roll out support for [Do Not Track](http://donottrack.us/). Do Not Track is an option you can enable in modern browsers to notify websites that you do not wish to be tracked, and websites can interpret it however they like (most ignore it). If you have Do Not Track enabled, we will not load any third-party analytics. We will keep you informed as we develop more uses for it in the future.
+
+Individually, you have control over what information you share with us and what your browser sends to us automatically. I encourage everyone to understand how browsers and the web work and what steps you can take to protect your own privacy. Notably, browsers allow you to disable [third-party cookies](https://en.wikipedia.org/wiki/HTTP_cookie#Third-party_cookie), and you can customize your browser with a variety of privacy-related [extensions](http://lifehacker.com/the-best-browser-extensions-that-protect-your-privacy-479408034).
+
+We are proud that Reddit is home to many of the most open and genuine conversations online, and we know this is only made possible by your trust, without which we would not exist. We will continue to do our best to earn this trust and to respect your basic assumptions of privacy.
+
+Thank you for reading. I’ll be here for an hour to answer questions, and I'll check back in again the week of Dec 14th before the changes take effect.
+
+-Steve (spez)
+
+edit: Thanks for all the feedback. I'm off for now.CEO Steve here to answer more questions. It's been a little while since we've done this. Since we last talked, we've released a handful of [improvements for moderators](https://www.reddit.com/r/modnews); released a few [updates to AlienBlue](https://www.reddit.com/user/alien-blue); continue to work on the bigger mod/community tools (updates next week, I believe); hired a bunch of people, including two new [community](https://www.reddit.com/user/redtaboo) [managers](https://www.reddit.com/user/sodypop); and continue to make progress on our new mobile apps.
+
+There is a lot going on around here. Our most pressing priority is hiring, particularly engineers. If you're an engineer of any shape or size, please considering joining us. Email  jobs@reddit.com if you're interested!
+
+update: I'm outta here. Thanks for the questions!Content Policy Update Today we are releasing an update to our [Content Policy](https://www.reddit.com/help/contentpolicy). Our goal was to consolidate the various rules and policies that have accumulated over the years into a single set of guidelines we can point to.
+
+Thank you to all of you who provided feedback throughout this process. Your thoughts and opinions were invaluable. This is not the last time our policies will change, of course. They will continue to evolve along with Reddit itself.
+
+Our policies are not changing dramatically from what we have had in the past. One new concept is Quarantining a community, which entails applying a set of restrictions to a community so its content will only be viewable to those who explicitly opt in. We will Quarantine communities whose content would be considered extremely offensive to the average redditor.
+
+Today, in addition to applying Quarantines, we are banning a handful of communities that exist solely to annoy other redditors, prevent us from improving Reddit, and generally make Reddit worse for everyone else. Our most important policy over the last ten years has been to allow just about anything so long as it does not prevent others from enjoying Reddit for what it is: the best place online to have truly authentic conversations.
+
+I believe these policies strike the right balance.
+
+update: I know some of you are upset because we banned *anything* today, but the fact of the matter is we spend a disproportionate amount of time dealing with a handful of communities, which prevents us from working on things for the other 99.98% (literally) of Reddit. I'm off for now, thanks for your feedback. RIP my inbox.Good morning, I thought I'd give a quick update. I thought I'd start my day with a quick status update for you all. It's only been a couple weeks since my return, but we've got a lot going on. We are in a phase of emergency fixes to repair a number of longstanding issues that are causing all of us grief. I normally don't like talking about things before they're ready, but because many of you are asking what's going on, and have been asking for a long time before my arrival, I'll share what we're up to.
+
+Under active development:
+
+* Content Policy. We're consolidating all our rules into one place. We won't release this formally until we have the tools to enforce it.
+* Quarantine the communities we don't want to support
+* Improved banning for both admins and moderators (a less sneaky alternative to shadowbanning)
+* Improved ban-evasion detection techniques (to make the former possible).
+* Anti-brigading research (what techniques are working to coordinate attacks)
+* AlienBlue bug fixes
+* AlienBlue improvements
+* Android app
+
+Next up:
+
+* Anti-abuse and harassment (e.g. preventing PM harassment)
+* Anti-brigading
+* Modmail improvements
+
+As you can see, lots on our plates right now, but the team is cranking, and we're excited to get this stuff shipped as soon as possible!
+
+I'll be hanging around in the comments for an hour or so.
+
+update: I'm off to work for now. Unlike you, work for me doesn't consist of screwing around on Reddit all day. Thanks for chatting!TIL it's Orville Redenbacher's birthday. Let's talk content. AMA. We started Reddit to be—as we said back then with our tongues in our cheeks—“The front page of the Internet.” Reddit was to be a source of enough news, entertainment, and random distractions to fill an entire day of pretending to work, every day. Occasionally, someone would start spewing hate, and I would ban them. The community rarely questioned me. When they did, they accepted my reasoning: “because I don’t want that content on our site.”
+
+As we grew, I became increasingly uncomfortable projecting my worldview on others. More practically, I didn’t have time to pass judgement on everything, so I decided to judge nothing. 
+
+So we entered a phase that can best be described as Don’t Ask, Don’t Tell. This worked temporarily, but once people started paying attention, few liked what they found. A handful of painful controversies usually resulted in the removal of a few communities, but with inconsistent reasoning and no real change in policy.
+
+One thing that isn't up for debate is why Reddit exists. Reddit is a place to have open and authentic discussions. The reason we’re careful to restrict speech is because people have more open and authentic discussions when they aren't worried about the speech police knocking down their door. When our purpose comes into conflict with a policy, we make sure our purpose wins.
+
+As Reddit has grown, we've seen additional examples of how unfettered free speech can make Reddit a less enjoyable place to visit, and can even cause people harm outside of Reddit. Earlier this year, [Reddit took a stand and banned non-consensual pornography](https://www.reddit.com/r/announcements/comments/2x0g9v/from_1_to_9000_communities_now_taking_steps_to/). This was largely accepted by the community, and the world is a better place as a result (Google and Twitter have followed suit). Part of the reason this went over so well was because there was a very clear line of what was unacceptable.
+
+Therefore, today we're announcing that we're considering a set of additional restrictions on what people can say on Reddit—or at least say on our public pages—in the spirit of our mission.
+
+These types of content are prohibited [1]:
+
+ * Spam
+ * Anything illegal (i.e. things that are actually illegal, such as copyrighted material. Discussing illegal activities, such as drug use, is not illegal)
+ * Publication of someone’s private and confidential information
+ * Anything that incites harm or violence against an individual or group of people (it's ok to say "I don't like this group of people." It's not ok to say, "I'm going to kill this group of people.")
+ * Anything that [harasses, bullies, or abuses](http://www.redditblog.com/2015/05/promote-ideas-protect-people.html) an individual or group of people (these behaviors intimidate others into silence)[2]
+ * Sexually suggestive content featuring minors
+
+There are other types of content that are specifically classified:
+
+ * Adult content must be flagged as NSFW (Not Safe For Work). Users must opt into seeing NSFW communities. This includes pornography, which is difficult to define, but you know it when you see it.
+ * Similar to NSFW, another type of content that is difficult to define, but you know it when you see it, is the content that violates a common sense of decency. This classification will require a login, must be opted into, will not appear in search results or public listings, and will generate no revenue for Reddit.
+
+We've had the NSFW classification since nearly the beginning, and it's worked well to separate the pornography from the rest of Reddit. We believe there is value in letting all views exist, even if we find some of them abhorrent, as long as they don’t pollute people’s enjoyment of the site. Separation and opt-in techniques have worked well for keeping adult content out of the common Redditor’s listings, and we think it’ll work for this other type of content as well. 
+
+No company is perfect at addressing these hard issues. We’ve spent the last few days here discussing and agree that an approach like this allows us as a company to repudiate content we don’t want to associate with the business, but gives individuals freedom to consume it if they choose. This is what we will try, and if the hateful users continue to spill out into mainstream reddit, we will try more aggressive approaches. Freedom of expression is important to us, but it’s more important to us that we at reddit be true to our mission.
+
+[1] This is basically what we have right now. I’d appreciate your thoughts. A very clear line is important and our language should be precise.
+
+[2] Wording we've used elsewhere is this "Systematic and/or continued actions to torment or demean someone in a way that would make a reasonable person (1) conclude that reddit is not a safe platform to express their ideas or participate in the conversation, or (2) fear for their safety or the safety of those around them."
+
+edit: added an example to clarify our concept of "harm"
+edit: attempted to clarify harassment based on our existing policy
+
+update: I'm out of here, everyone. Thank you so much for the feedback. I found this very productive. I'll check back later.Content Policy update. AMA Thursday, July 16th, 1pm pst. Hey Everyone,
+
+There has been a lot of discussion lately —on reddit, in the news, and here internally— about reddit’s policy on the more offensive and obscene content on our platform. Our top priority at reddit is to develop a comprehensive Content Policy and the tools to enforce it.
+
+The overwhelming majority of content on reddit comes from wonderful, creative, funny, smart, and silly communities. That is what makes reddit great. There is also a dark side, communities whose purpose is reprehensible, and we don’t have any obligation to support them. And we also believe that some communities currently on the platform should not be here at all.
+
+Neither Alexis nor I created reddit to be a bastion of free speech, but rather as a place where open and honest discussion can happen:  These are very complicated issues, and we are putting a lot of thought into it. It’s something we’ve been thinking about for quite some time.  We haven’t had the tools to enforce policy, but now we’re building those tools and reevaluating our policy.
+
+We as a community need to decide together what our values are. To that end, I’ll be hosting an AMA on Thursday 1pm pst to present our current thinking to you, the community, and solicit your feedback.
+
+PS - I won’t be able to hang out in comments right now. Still meeting everyone here!I am Steve Huffman, the new CEO of reddit. AMA. Hey Everyone, I'm Steve, aka spez, the new CEO around here. For those of you who don't know me, I founded reddit ten years ago with my college roommate Alexis, aka kn0thing. Since then, reddit has grown far larger than my wildest dreams. I'm so proud of what it's become, and I'm very excited to be back.
+
+I know we have a lot of work to do. One of my first priorities is to re-establish a relationship with the community. This is the first of what I expect will be many AMAs (I'm thinking I'll do these weekly).
+
+My proof: it's me!
+
+edit: I'm done for now. Time to get back to work. Thanks for all the questions!Penn State, thanks for showing me a great time this weekend! In light of the recent elections, a friend of mine is starting a company to facilitate political campaigns and is in need of mobile developers. If you're interested, PM me, and I'll put you in touch. Preferably in the Boston area.Hipmunk needs help with customer feedback! http://www.hipmunk.com
+
+Hipmunk is a new travel search startup making it easier to find plane tickets. We launched a couple of days ago and have received a lot of great [press](http://money.cnn.com/2010/08/19/technology/hipmunk/).
+
+Since launch we have been inundated with feedback emails and chat support requests. We need someone to answer customers' questions and feedback through email and live chat.
+
+The ideal candidate is web-savvy, friendly, and has an endlessly positive attitude. Hours and location are flexible.
+
+We are based in San Francisco.
+
+If interested, please email jobs-8-2010@hipmunk.comHey everyone! This is the new flight search startup I've been working on the past few months. Hope you like! Fare Thee Well, reddit! We need more moderators on this reddit. Nominate people here, and hopefully we can improve the spam false-positive issue that has been bothering you all.
+
+We need people who are willing to watch the spam listing for this reddit and make sure it is only spam that is blocked.A couple of changes... We're working on a couple of things that will hopefully help avoid future eruptions like the one of the past few days:
+
+ * We're improving the popularity metric for reddits. Specifically, attacking a reddit will not boost its popularity. This will take some time, but we'll get there.
+
+ * No mercy for attacking a reddit. Starting now, anyone who mass-downvotes every link on a reddit will have their voting privileges removed.
+
+**FAQ**
+
+*Why was /r/atheism removed from the default reddit list for non-logged-in users again?*
+
+For the past few months the default reddits have been the top ten most popular reddits, which are automatically computed each morning from the previous day's activity. /r/atheism went through a couple of weeks under attack from other users causing it to appear more popular than it should have been. At the time this was an isolated issue, so we didn't do much about it. When the same thing happened to /r/moviecritic, we addressed the issue by removing the two less popular reddits from the list by hand. Given the two bullet points above, this will no longer be necessary.
+
+*Why was /r/atheism removed from the top bar as well?*
+
+This was a side-effect of how we removed it from the front page. We used the same function for both returning the list of reddits for the front page and returning the list of reddits for the top bar. It was a mistake, and is fixed now.
+
+*Why is the /r/christianity reddit so popular all of a sudden?*
+
+Contrary to popular belief, this isn't my or anyone else at reddit's handy-work. It is because a handful of /r/atheism users are downvoting every story on /r/christianity. As I have previously mentioned, this actually makes a reddit more popular, an unintended side-effect of how we rank reddits. I'm working on undoing the attack, but this will take time. Of course, I will also undo any attacks against any other reddits as well.
+
+*Will /r/atheism ever appear on the front page?*
+
+If it gets more popular, it will be possible.
+
+*But it has more than 50,000 subscribers, it must be popular!*
+
+Subscribers aren't a factor in a reddit's popularity. It's popularity is determined by level of activity.
+
+*You said something previously about not all content being appropriate for the front page. What's the deal with that?*
+
+In the past we chose the front-page reddits by hand, and in the future we might do that again, but it's not something we're actively working on. There are over 25,000 communities on reddit, and only 10 appear on the front page. It's nothing personal. We want to have a large variety of content on the front page to demonstrate that there is something here for everyone. If we start engineering the front page again, it'll be clear what we're doing, and how we're doing it.
+
+*Everything you say is a lie. You clearly hate atheists. Why should I believe you now?*
+
+Ever since Alexis and I founded reddit.com over four years ago, we've worked hard to make this a place where anyone can come and share new and interesting links. We've (and me, specifically) have made mistakes, but we've done our best to fix them and move on, and I think our actions over the past four years speak for themselves. You're free to dislike me/us, and we will proudly continue to provide a forum for you to do so on this site.
