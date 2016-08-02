@@ -3,46 +3,41 @@ Reddit Persona is a python module that extracts personality insights, sentiment 
 
 #Setup
 Register for an API key with Indicio
-When importing the module:
+When importing the module for the first time, you will be prompted to enter your key.
+Key is then verified and saved to disk.
 
 
 ```python
-import reddit_persona
-
-Indico API key missing/invalid
-
-'Redditor text can be collected with reddit_persona.go(USERNAME), but it will not be analyzed'
-
-To enter your indico API key, use reddit_persona.new_key( )
-
-
-
-
-reddit_persona.new_key('  your key  ')
-'Key validated and saved to disk. You will not need to re-enter again'
+>>> import reddit_persona
+>>> Indico API key missing/invalid
+>>> 'Without this key, reddit_persona.go(USERNAME) will collect and return Redditor text only'
+>>> 'To enter your indico API key, use reddit_persona.new_key( )'
+>>> reddit_persona.new_key('  your key  ')
+>>> 'Key validated and saved to disk. You will not need to re-enter again'
 ```
 
 # Usage 
 Input:
 
-
-
 ```python
-
 >>> import reddit_persona
-
-# Optional parameter 'refresh': 
-#   If redditor data & analysis was queried within t seconds of present:
-#        return existing data and API results (default  = 3600*24 aka one day)
->>> governator reddit_persona.go("GovSchwarzenegger", refresh = 60)
+>>> governator reddit_persona.go("GovSchwarzenegger")
 >>> print governator
 ```
+
+Note: 
+reddit_persona.go() can accept optional parameter 'refresh', default 1 day:
+If redditor data & analysis text files were created before t seconds ago, reuse existing data
+```python
+  reddit_persona.go(username, refresh = 3600*24)
+```
+
 
 
 
 Output:
 
-Analysis output is printed to stdout. The raw reddit text and the analysis text are saved in reddit_persona/usr/ as username.txt and username_raw.txt respectively
+Analysis output is printed to stdout. The raw reddit text and the analysis text are saved in 'reddit_persona/usr/' as username.txt and username_raw.txt respectively
 
 
 ```
