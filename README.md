@@ -11,7 +11,7 @@ import reddit_persona
 
 Indico API key missing/invalid
 
-Redditor text can be collected with reddit_persona.go(USERNAME), but it will not be analyzed
+'Redditor text can be collected with reddit_persona.go(USERNAME), but it will not be analyzed'
 
 To enter your indico API key, use reddit_persona.new_key( )
 
@@ -19,18 +19,32 @@ To enter your indico API key, use reddit_persona.new_key( )
 
 
 reddit_persona.new_key('  your key  ')
-Key validated and saved to disk. You will not need to re-enter again
+'Key validated and saved to disk. You will not need to re-enter again'
 ```
 
 # Usage 
 Input:
+
+
+
 ```python
 
 >>> import reddit_persona
->>> print reddit_persona.go("GovSchwarzenegger")
+
+# Optional parameter 'refresh': 
+#   If redditor data & analysis was queried within t seconds of present:
+#        return existing data and API results (default  = 3600*24 aka one day)
+>>> governator reddit_persona.go("GovSchwarzenegger", refresh = 60)
+>>> print governator
 ```
 
+
+
 Output:
+
+Analysis output is printed to stdout. The raw reddit text and the analysis text are saved in reddit_persona/usr/ as username.txt and username_raw.txt respectively
+
+
 ```
 Username: GovSchwarzenegger
 
@@ -74,4 +88,5 @@ Username: GovSchwarzenegger
         film 0.4%
 
 ```
-Note: Analysis output is printed to stdout, and both raw reddit text and analysis are saved in reddit_persona/usr/..
+
+
