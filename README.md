@@ -1,5 +1,5 @@
 # Reddit_Persona
-Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from any redditor's posts &amp; comments, using reddit's PRAW API with machine learning powered by [Indicio.io](https://indicio.io) -a free API key is required)
+Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from any redditor's posts &amp; comments. redditor text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indicio.io](https://indicio.io), for which a free API key is required. Indicio allows for 10,000 API calls per month. Additional calls available for $0.006/call.
 
 #Setup
 Register for an API key with Indicio
@@ -84,4 +84,5 @@ Username: GovSchwarzenegger
 
 ```
 
-
+I have no affiliation with Indico, I just think it's a cool service for out of the box machine learning. 
+While it's possible to reproduce these results using Torch, Keras, TensorFlow, etc., I believe the next step in machine learning is accessible deployment, empowering any user with the magic of this new technology. 
