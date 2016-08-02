@@ -21,7 +21,7 @@ Input:
 
 ```python
 >>> import reddit_persona
->>> governator reddit_persona.go("GovSchwarzenegger")
+>>> governator = reddit_persona.go("GovSchwarzenegger")
 >>> print governator
 ```
 
