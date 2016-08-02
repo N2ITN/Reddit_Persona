@@ -1,5 +1,5 @@
 # Reddit_Persona
-Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from any redditor's posts &amp; comments. redditor text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indico.io](https://indico.io), for which a free API key is required. The API key allows for 10,000 API calls per month. Additional calls can be made for $0.006/call.
+Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from any redditor's posts &amp; comments. redditor text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indico.io](https://indico.io), for which a free API key is required. The API key allows for 10,000 API calls per month. A fee of $0.006 each applies to additional calls.
 
 #Setup
 Register for an API key with Indico
