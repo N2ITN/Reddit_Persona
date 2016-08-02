@@ -1,8 +1,8 @@
 # Reddit_Persona
-Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from any redditor's posts &amp; comments. redditor text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indicio.io](https://indicio.io), for which a free API key is required. Indicio allows for 10,000 API calls per month. Additional calls available for $0.006/call.
+Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from any redditor's posts &amp; comments. redditor text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indico.io](https://indico.io), for which a free API key is required. The API key allows for 10,000 API calls per month. Additional calls can be made for $0.006/call.
 
 #Setup
-Register for an API key with Indicio
+Register for an API key with Indico
 When importing the module for the first time, you will be prompted to enter your key.
 Key is then verified and saved to disk.
 
@@ -13,7 +13,7 @@ Key is then verified and saved to disk.
 >>> 'Without this key, reddit_persona.go(USERNAME) will collect and return Redditor text only'
 >>> 'To enter your indico API key, use reddit_persona.new_key( )'
 >>> reddit_persona.new_key('  your key  ')
->>> 'Key validated and saved to disk. You will not need to re-enter again'
+>>> 'Key validated and saved to module files. You will not need to enter it again.'
 ```
 
 # Usage 
@@ -27,9 +27,10 @@ Input:
 
 Note: 
 reddit_persona.go() can accept optional parameter 'refresh', default 1 day:
-If redditor data & analysis text files were created before t seconds ago, reuse existing data
+If API calls for redditor data & text analysis were created before t seconds ago, reuse existing data.
+Example for making new API calls after one minute:
 ```python
-  reddit_persona.go(username, refresh = 3600*24)
+  reddit_persona.go(username, refresh = 60)
 ```
 
 
