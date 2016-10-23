@@ -4,7 +4,7 @@ Reddit Persona is a python module that extracts personality insights, sentiment 
 #Setup
 Compatible with Python 2 and 3
 ```python
->>>pip install reddit_persona
+>>> pip install reddit_persona
 ```
 
 
