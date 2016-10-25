@@ -113,7 +113,7 @@ def execute(USERNAME, target,refresh):
 
     # Political
     pol = {
-        'text': "Probable political alignments: ",
+        'text': "Political alignments: ",
         "payload": indicoio.political(
             r_data, version=1)
     }
@@ -138,7 +138,7 @@ def execute(USERNAME, target,refresh):
     tt = {'text': "Text tags: ", "payload": indicoio.text_tags(r_data), 'ct': 10}
     # Place
     pla = {
-        'text': "Best guess for location: ",
+        'text': "Key locations: ",
         'payload': indicoio.places(
             r_data, version=2),
         'ct': 3,
