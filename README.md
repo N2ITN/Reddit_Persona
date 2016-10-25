@@ -8,26 +8,15 @@ Compatible with Python 2 and 3
 ```
 
 
-
-Python
-```python
->>> import reddit_persona
->>> Indico API key missing/invalid
->>> 'Without this key, reddit_persona.go(USERNAME) will collect and return Redditor text only'
->>> 'To enter your indico API key, use reddit_persona.new_key( )'
->>> reddit_persona.new_key('  your key  ')
->>> 'Key validated and saved to module files. You will not need to enter it again.'
-```
-
 ## Usage 
 
 
 
 Command
 ```command
-user query
+>>> # user query
 >>> python -m reddit_persona /u/GovSchwarzenegger
-subreddit query
+>>> # subreddit query
 >>> python -m reddit_persona /r/python
 ```
 
