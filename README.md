@@ -32,7 +32,7 @@ Python
 Requests, especially for subreddits, can take a while. This is due primarily to the reddit API.
 To save on time, this module avoids recreating API calls, by caching recent results. If a call is rerun with a day, results will read from the cache.
 
-In python mode, ```python reddit_persona.go()``` accepts the optional parameter 'refresh' to customize data refresh time, in seconds.
+In python mode, ```reddit_persona.go()``` accepts the optional parameter 'refresh' to customize data refresh time, in seconds.
 For a one minute refresh on new queries:
 ```python
   reddit_persona.go(username, refresh = 60)
