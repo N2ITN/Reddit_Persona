@@ -8,7 +8,8 @@ from reddit_persona import io_helper
 
 
 class reddit:
-    def __init__(self,user):
+
+    def __init__(self, user):
         self.user = user
         try:
             self.reddit_pull(user)
@@ -32,6 +33,7 @@ class reddit:
             c_raw += f.body + " "
         self.reddit_data = ''.join(c_raw + " " + s_raw).encode('utf-8')
 
+
 def report(username):
     account = reddit(username)
     payload = account.reddit_data
@@ -39,12 +41,10 @@ def report(username):
     return str(payload)
 
 
-def user_text(accountname,refresh):
+def user_text(accountname, refresh):
     u = accountname + '_raw.txt'
     memoize = path.join(io_helper.usr_path, u)
-    if io_helper.check_time(accountname,refresh):
-        with  open(memoize,'w') as r_data:
+    if io_helper.check_time(accountname, refresh):
+        with open(memoize, 'w') as r_data:
             nameOut = report(accountname)
             r_data.write(nameOut)
-        
-
