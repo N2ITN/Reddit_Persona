@@ -126,12 +126,12 @@ def execute(USERNAME, refresh):
             subreddit = thing.subreddit.display_name
             karma_by_subreddit[subreddit] = (
                 karma_by_subreddit.get(subreddit, 0) + thing.score)
-            kList = []
+
+        kList = ['Karma by Sub']
 
         for w in sorted(
                 karma_by_subreddit, key=karma_by_subreddit.get, reverse=True):
             kList.append(str(w) + ': ' + str(karma_by_subreddit[w]))
-        kList.insert(0, 'Karma by Sub')
 
         print("\n\t".join(kList[:10]))
 
