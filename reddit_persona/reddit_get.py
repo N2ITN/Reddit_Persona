@@ -14,7 +14,7 @@ class reddit:
         try:
             self.reddit_pull(user)
         except:
-            #  "Could not pull data."
+            print("No user by this name")
             exit()
 
     def reddit_pull(self, user):

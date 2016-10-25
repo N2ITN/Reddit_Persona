@@ -22,7 +22,7 @@ def go(USERNAME, refresh=60 * 60 * 24):
     with open(fpath, 'r') as f:
         response = ' '.join([line + ' ' for line in f])
 
-    print(str(response))#.encode('ascii')
+    print(str(response))
 
 
 # TODO Add subreddits or descriptions
