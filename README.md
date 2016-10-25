@@ -1,21 +1,16 @@
 # Reddit_Persona
-Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from any redditor's posts &amp; comments. redditor text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indico.io](https://indico.io), for which a free API key is required. The API key allows for 10,000 API calls per month. A fee of $0.006 each applies to additional calls.
+Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from a subreddit or user account. Text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indico.io](https://indico.io), for which a free API key is required. The API key allows for 10,000 API calls per month. A fee of $0.006 each applies to additional calls.
 
-#Setup
+## Setup
 Compatible with Python 2 and 3
 ```python
->>> pip install reddit_persona
+>>> pip install reddit_persona 
 ```
 
 
 
-## Indico.io API key
-When importing the module for the first time, you will be prompted to enter a new key, if a valid key does not exist.
-The new key is then verified then saved to disk.
-I have opted to include my personal API key as default. It allows up 10k calls- first come first serve!
-If it breaks or runs out, its free to get your own.
 
-
+Python
 ```python
 >>> import reddit_persona
 >>> Indico API key missing/invalid
@@ -25,36 +20,38 @@ If it breaks or runs out, its free to get your own.
 >>> 'Key validated and saved to module files. You will not need to enter it again.'
 ```
 
-# Usage 
-Input:
+## Usage 
 
+Command
+```command
+user query
+>>> python -m reddit_persona /u/GovSchwarzenegger
+subreddit query
+>>> python -m reddit_persona /r/python
+```
+
+
+Python 
 ```python
 >>> import reddit_persona
->>> governator = reddit_persona.go("GovSchwarzenegger")
-```
-View in terminal:
-```python
+>>> governator = reddit_persona.go("/u/GovSchwarzenegger")
 >>> print(governator)
-```
-Save to txt:
-```python
+>>> #Save to txt
 >>> with open('arnold.txt', 'w') as t800:
 ...   t800.write(governator)
 ```
 
-Note: 
-reddit_persona.go() can accept optional parameter 'refresh', default 1 day:
-If API calls for redditor data & text analysis were created before t seconds ago, reuse existing data.
 
-Example for making new API calls after one minute:
+To save on time and API load, this module caches its raw text and output data on run. If a is rerun before 1 day has passed, most recent query will read from the cache.
+reddit_persona.go() accepts optional parameter 'refresh' to force new a API call (default 60 * 60 * 24 ).
+
+To force API call if cached call is older than one minute:
 ```python
   reddit_persona.go(username, refresh = 60)
 ```
 
 
-
-
-Output:
+### Output
 
 Analysis output is printed to stdout. The raw reddit text and the analysis text are saved in 'reddit_persona/usr/' as username.txt and username_raw.txt respectively
 
@@ -112,6 +109,17 @@ Username: GovSchwarzenegger
         AskReddit: 640
         ArnoldSchwarzenegger: 486
 ```
+### Note: Indico.io API key
+I have opted to include my personal API key as default. It allows up 10k calls- first come first serve!
+If it breaks or runs out, its free to get your own.
 
+Overwite key:
+```python
+>>> reddit_persona.new_key('your key')
+```
+The new key is then verified then saved to disk.
+
+
+### Thoughts
 I have no affiliation with Indico, I just like the idea of on demand machine learning APIs. 
 It's possible for a motivated programmer to produce similar results using Torch, Keras, TensorFlow, etc., however I believe the next step in the unfurling of machine learning is broad access, putting the magic of machine intelligence into the hands of anyone who is interested. 
