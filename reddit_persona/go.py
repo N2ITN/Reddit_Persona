@@ -1,28 +1,38 @@
 from reddit_persona import insights
 from reddit_persona import reddit_get
-# import ibm_insights
 from reddit_persona import io_helper
 
+def show(USERNAME,target):
+    fpath = io_helper.out_path(USERNAME,target)
+    with open(fpath, 'r') as f:
+        response = ' '.join([line + ' ' for line in f])
+    print(str(response))
 
-def go(USERNAME, refresh=60 * 60 * 24):
+def go(target, refresh=60*60*24):
 
-    reddit_get.user_text(USERNAME, refresh)
-
+    parse = target.split('/')
+    USERNAME  = parse[2]
+    if not io_helper.check_time(USERNAME, target,refresh):
+        show(USERNAME,target)
+        return
+    if parse[1] == 'u':
+        target = 'user'
+        reddit_get.user_text(user = USERNAME, refresh = refresh)
+    elif parse[1] == 'r':
+        target = 'sub'
+        reddit_get.user_text(sub = USERNAME, refresh = refresh)
+        
     try:
         indicoio.config.api_key = indicoKey.key
         indicoio.sentiment("I love writing code!")
 
     except Exception as e:
-        io_helper.read_raw(USERNAME)
+        io_helper.read_raw(USERNAME,target)
 
-    insights.execute(USERNAME, refresh)
-    # ibm_insights.user(USERNAME)
+    insights.execute(USERNAME,target, refresh)
 
-    fpath = io_helper.out_path(USERNAME)
-    with open(fpath, 'r') as f:
-        response = ' '.join([line + ' ' for line in f])
+    show(USERNAME,target)
 
-    print(str(response))
 
 
 # TODO Add subreddits or descriptions

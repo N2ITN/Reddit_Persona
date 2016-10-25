@@ -1,0 +1,57 @@
+Username: python
+
+Keywords: 
+    Python 56.08%
+    Excel 36.0%
+    LPTHW 25.45%
+    stuff 19.46%
+    learning 16.98%
+
+Best guess for location: 
+    America 74.66%
+    Japan 73.15%
+    Tunisia 58.38%
+
+Big 5 personality inventory matches: 
+    openness 58.04%
+    conscientiousness 49.69%
+    agreeableness 44.88%
+    extraversion 43.98%
+
+Predominant emotions:
+    sadness 40.59%
+    anger 18.83%
+    surprise 17.49%
+    joy 13.15%
+    fear 9.94%
+
+Sentiment: 
+    Percent positive 90.61%
+
+Probable political alignments: 
+    Liberal 49.12%
+    Green 31.58%
+    Conservative 9.87%
+    Libertarian 9.43%
+
+Most likely personalilty styles: 
+    intp 10.56%
+    intj 10.26%
+    infp 7.99%
+    infj 7.76%
+    entp 7.18%
+
+Text tags: 
+    programming 99.86%
+    startups_and_entrepreneurship 0.12%
+    math 0.01%
+    design 0.0%
+    technology 0.0%
+    writing 0.0%
+    electronics 0.0%
+    jobs 0.0%
+    investment 0.0%
+    art 0.0%
+
+Karma by Sub
+	Python: 25
