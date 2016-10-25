@@ -10,7 +10,7 @@ Compatible with Python 2 and 3
 
 
 
-Python:
+Python
 ```python
 >>> import reddit_persona
 >>> Indico API key missing/invalid
@@ -22,7 +22,7 @@ Python:
 
 ## Usage 
 
-Command:
+Command
 ```command
 >>> python -m reddit_persona GovSchwarzenegger
 ```
@@ -34,7 +34,7 @@ Python
 >>> governator = reddit_persona.go("GovSchwarzenegger")
 >>> print(governator)
 ```
-Save to txt:
+Save to txt
 ```python
 >>> with open('arnold.txt', 'w') as t800:
 ...   t800.write(governator)
@@ -50,7 +50,7 @@ Force API call refresh after one minute:
 ```
 
 
-### Output:
+### Output
 
 Analysis output is printed to stdout. The raw reddit text and the analysis text are saved in 'reddit_persona/usr/' as username.txt and username_raw.txt respectively
 
