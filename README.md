@@ -8,26 +8,14 @@ Compatible with Python 2 and 3
 ```
 
 
-
-
-Python
-```python
->>> import reddit_persona
->>> Indico API key missing/invalid
->>> 'Without this key, reddit_persona.go(USERNAME) will collect and return Redditor text only'
->>> 'To enter your indico API key, use reddit_persona.new_key( )'
->>> reddit_persona.new_key('  your key  ')
->>> 'Key validated and saved to module files. You will not need to enter it again.'
-```
-
 ## Usage 
 
-Command
+
+
+Shell
 ```command
-user query
->>> python -m reddit_persona /u/GovSchwarzenegger
-subreddit query
->>> python -m reddit_persona /r/python
+python -m reddit_persona /u/GovSchwarzenegger
+python -m reddit_persona /r/python
 ```
 
 
@@ -41,11 +29,11 @@ Python
 ...   t800.write(governator)
 ```
 
+Requests, especially for subreddits, can take a while. This is due primarily to the reddit API.
+To save on time, this module avoids recreating API calls, by caching recent results. If a call is rerun with a day, results will read from the cache.
 
-To save on time and API load, this module caches its raw text and output data on run. If a is rerun before 1 day has passed, most recent query will read from the cache.
-reddit_persona.go() accepts optional parameter 'refresh' to force new a API call (default 60 * 60 * 24 ).
-
-To force API call if cached call is older than one minute:
+In python mode, ```reddit_persona.go()``` accepts the optional parameter 'refresh' to customize data refresh time, in seconds.
+For a one minute refresh on new queries:
 ```python
   reddit_persona.go(username, refresh = 60)
 ```
