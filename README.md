@@ -12,12 +12,10 @@ Compatible with Python 2 and 3
 
 
 
-Command
+Shell
 ```command
->>> # user query
->>> python -m reddit_persona /u/GovSchwarzenegger
->>> # subreddit query
->>> python -m reddit_persona /r/python
+python -m reddit_persona /u/GovSchwarzenegger
+python -m reddit_persona /r/python
 ```
 
 
