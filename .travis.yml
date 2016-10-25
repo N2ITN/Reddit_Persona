@@ -9,8 +9,8 @@ python:
   - "3.6"
 
 install: 
-python setup.py install
-pip install reddit_persona
+  - python setup.py install
+  - pip install -e
 
 script:
   - coverage run --source=reddit_persona setup.py test
