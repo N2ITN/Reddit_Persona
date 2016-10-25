@@ -189,7 +189,7 @@ def execute(USERNAME, target,refresh):
 
     with open(fpath, 'w') as outtie:
         sys.stdout = outtie
-        print("Username: " + USERNAME)
+        print(target + USERNAME)
         print()
         show([kw, pla, big5, emo, sen, pol,mbti, tt])
         Karma(USERNAME)
