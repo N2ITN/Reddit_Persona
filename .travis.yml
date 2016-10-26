@@ -6,9 +6,11 @@ python:
   - "3.3"
   - "3.4"
   - "3.5"
-  - "3.6
+  - "3.6"
 
-install: python setup.py install
+install: 
+  - python setup.py install
+  - pip install reddit_persona
 
 script:
   - coverage run --source=reddit_persona setup.py test
