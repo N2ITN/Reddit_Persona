@@ -5,16 +5,15 @@ import sys
 from reddit_persona import io_helper
 from reddit_persona import keycheck
 
-
 meta_dict = {}
 
 
-def execute(USERNAME, target,refresh):
-    
-    r_data = io_helper.read_raw(USERNAME,target)
+def execute(USERNAME, target, refresh):
+
+    r_data = io_helper.read_raw(USERNAME, target)
 
     og = sys.stdout
-    fpath = io_helper.out_path(USERNAME,target)
+    fpath = io_helper.out_path(USERNAME, target)
 
     def analysis(raw='', limit=5, text='', percent=True):
         global meta_dict
@@ -73,43 +72,41 @@ def execute(USERNAME, target,refresh):
     }
 
     # Meyers briggs
-    mbtiLabels  = indicoio.personas(r_data)
+    mbtiLabels = indicoio.personas(r_data)
     mbti_dict = {
-    'architect': 'intj',
-    'logician': 'intp',
-    'commander': 'entj',
-    'debater': 'entp',
-    'advocate': 'infj',
-    'mediator': 'infp',
-    'protagonist': 'enfj',
-    'campaigner': 'enfp',
-    'logistician': 'istj',
-    'defender': 'isfj',
-    'executive': 'estj',
-    'consul': 'esfj',
-    'virtuoso': 'istp',
-    'adventurer': 'isfp',
-    'entrepreneur': 'estp',
-    'entertainer': 'esfp'
+        'architect': 'intj',
+        'logician': 'intp',
+        'commander': 'entj',
+        'debater': 'entp',
+        'advocate': 'infj',
+        'mediator': 'infp',
+        'protagonist': 'enfj',
+        'campaigner': 'enfp',
+        'logistician': 'istj',
+        'defender': 'isfj',
+        'executive': 'estj',
+        'consul': 'esfj',
+        'virtuoso': 'istp',
+        'adventurer': 'isfp',
+        'entrepreneur': 'estp',
+        'entertainer': 'esfp'
     }
 
     def replace_mbti():
-        for k,v in mbtiLabels.items():
-            k = k.replace(k,mbti_dict[k])
+        for k, v in mbtiLabels.items():
+            k = k.replace(k, mbti_dict[k])
             yield k
-            
-    
-    k =  (list(replace_mbti()))
-    v =  map(lambda x: x, mbtiLabels.values())
-    payload = (dict(zip(k,v)))
+
+    k = (list(replace_mbti()))
+    v = map(lambda x: x, mbtiLabels.values())
+    payload = (dict(zip(k, v)))
 
     mbti = {
-    'text': "Most likely personalilty styles: ",
-    "payload": payload,
-    'ct': 5,
-    'percent': True
+        'text': "Most likely personalilty styles: ",
+        "payload": payload,
+        'ct': 5,
+        'percent': True
     }
-
 
     # Political
     pol = {
@@ -120,10 +117,11 @@ def execute(USERNAME, target,refresh):
     # Sentiment
     sen = {
         'text': "Sentiment: ",
-        "payload": {'Percent positive': indicoio.sentiment(r_data)},
+        "payload": {
+            'Percent positive': indicoio.sentiment(r_data)
+        },
         'ct': 3
     }
-
 
     # Emotion 
     emo = {
@@ -135,7 +133,11 @@ def execute(USERNAME, target,refresh):
     # Keywords
     kw = {'text': "Keywords: ", "payload": indicoio.keywords(r_data), 'ct': 5}
     # Text tags
-    tt = {'text': "Text tags: ", "payload": indicoio.text_tags(r_data), 'ct': 10}
+    tt = {
+        'text': "Text tags: ",
+        "payload": indicoio.text_tags(r_data),
+        'ct': 10
+    }
     # Place
     pla = {
         'text': "Key locations: ",
@@ -160,7 +162,6 @@ def execute(USERNAME, target,refresh):
             subreddit = thing.subreddit.display_name
             karma_by_subreddit[subreddit] = (
                 karma_by_subreddit.get(subreddit, 0) + thing.score)
-            
 
         for w in sorted(
                 karma_by_subreddit, key=karma_by_subreddit.get, reverse=True):
@@ -179,7 +180,7 @@ def execute(USERNAME, target,refresh):
                 print("Not enough information to infer place of origin")
                 print()
             else:
-                
+
                 i = results
                 analysis(
                     raw=i.get('payload', ''),
@@ -191,8 +192,8 @@ def execute(USERNAME, target,refresh):
         sys.stdout = outtie
         print(target + USERNAME)
         print()
-        show([kw, pla, big5, emo, sen, pol,mbti, tt])
+        show([kw, pla, big5, emo, sen, pol, mbti, tt])
         Karma(USERNAME)
-        
+
         sys.stdout = og
     return

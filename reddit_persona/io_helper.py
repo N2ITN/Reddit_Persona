@@ -1,30 +1,28 @@
 from os import path, getcwd
 import datetime
 
-
-p = __file__.rsplit('\\',1)[0]
+p = __file__.rsplit('\\', 1)[0]
 usr_path = path.join(p, 'cache')
 
 
-
-def read_raw(USERNAME,target):
+def read_raw(USERNAME, target):
     f = USERNAME + '_raw.txt'
-    memoize = path.join(usr_path,target, f)
+    memoize = path.join(usr_path, target, f)
     with open(memoize, 'r') as r_data:
         r_data = ''.join([line for line in r_data])
     return r_data
 
 
-def out_path(USERNAME,target):
+def out_path(USERNAME, target):
     f = USERNAME + '.txt'
-    memoize = path.join(usr_path,target, f)
+    memoize = path.join(usr_path, target, f)
     return memoize
 
 
-def check_time(USERNAME, target,seconds_):
+def check_time(USERNAME, target, seconds_):
 
     # Prevent new API requests if result exists from within one minute
-    memoize = out_path(USERNAME,target)
+    memoize = out_path(USERNAME, target)
     try:
         ttime = path.getmtime(memoize)
     except Exception as e:
