@@ -1,7 +1,7 @@
 from os import path, getcwd
 import datetime
 
-p = __file__.rsplit('\\', 1)[0]
+p, f = path.split(path.abspath(__file__))
 usr_path = path.join(p, 'cache')
 
 
