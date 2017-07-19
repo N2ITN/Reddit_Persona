@@ -1,4 +1,2 @@
 IndicoIo==1.0.9
 praw==5.0.1
-simplejson==3.8.2
-reddit_persona==1.1.1

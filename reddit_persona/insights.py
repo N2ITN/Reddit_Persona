@@ -66,10 +66,7 @@ def execute(USERNAME, target, refresh):
     indicoio.config.api_key = keycheck.get_key()
 
     # Big 5
-    big5 = {
-        'text': "Big 5 personality inventory matches: ",
-        "payload": indicoio.personality(r_data)
-    }
+    big5 = {'text': "Big 5 personality inventory matches: ", "payload": indicoio.personality(r_data)}
 
     # Meyers briggs
     mbtiLabels = indicoio.personas(r_data)
@@ -101,48 +98,24 @@ def execute(USERNAME, target, refresh):
     v = map(lambda x: x, mbtiLabels.values())
     payload = (dict(zip(k, v)))
 
-    mbti = {
-        'text': "Most likely personalilty styles: ",
-        "payload": payload,
-        'ct': 5,
-        'percent': True
-    }
+    mbti = {'text': "Most likely personalilty styles: ", "payload": payload, 'ct': 5, 'percent': True}
 
     # Political
-    pol = {
-        'text': "Political alignments: ",
-        "payload": indicoio.political(
-            r_data, version=1)
-    }
+    pol = {'text': "Political alignments: ", "payload": indicoio.political(r_data, version=1)}
     # Sentiment
-    sen = {
-        'text': "Sentiment: ",
-        "payload": {
-            'Percent positive': indicoio.sentiment(r_data)
-        },
-        'ct': 3
-    }
+    sen = {'text': "Sentiment: ", "payload": {'Percent positive': indicoio.sentiment(r_data)}, 'ct': 3}
 
     # Emotion 
-    emo = {
-        'text': "Predominant emotions:",
-        "payload": indicoio.emotion(r_data),
-        'ct': 5
-    }
+    emo = {'text': "Predominant emotions:", "payload": indicoio.emotion(r_data), 'ct': 5}
 
     # Keywords
     kw = {'text': "Keywords: ", "payload": indicoio.keywords(r_data), 'ct': 5}
     # Text tags
-    tt = {
-        'text': "Text tags: ",
-        "payload": indicoio.text_tags(r_data),
-        'ct': 10
-    }
+    tt = {'text': "Text tags: ", "payload": indicoio.text_tags(r_data), 'ct': 10}
     # Place
     pla = {
         'text': "Key locations: ",
-        'payload': indicoio.places(
-            r_data, version=2),
+        'payload': indicoio.places(r_data, version=2),
         'ct': 3,
         'percent': True
     }
@@ -160,11 +133,9 @@ def execute(USERNAME, target, refresh):
         karma_by_subreddit = {}
         for thing in gen:
             subreddit = thing.subreddit.display_name
-            karma_by_subreddit[subreddit] = (
-                karma_by_subreddit.get(subreddit, 0) + thing.score)
+            karma_by_subreddit[subreddit] = (karma_by_subreddit.get(subreddit, 0) + thing.score)
 
-        for w in sorted(
-                karma_by_subreddit, key=karma_by_subreddit.get, reverse=True):
+        for w in sorted(karma_by_subreddit, key=karma_by_subreddit.get, reverse=True):
             kList.append(str(w) + ': ' + str(karma_by_subreddit[w]))
         kList.insert(0, 'Karma by Sub')
 
@@ -186,14 +157,15 @@ def execute(USERNAME, target, refresh):
                     raw=i.get('payload', ''),
                     limit=i.get('ct', 5),
                     text=i.get('text', ''),
-                    percent=i.get('percent', True))
+                    percent=i.get('percent', True)
+                )
 
     with open(fpath, 'w') as outtie:
         sys.stdout = outtie
         print(target + USERNAME)
         print()
         show([kw, pla, big5, emo, sen, pol, mbti, tt])
-        Karma(USERNAME)
+        # Karma(USERNAME)
 
         sys.stdout = og
     return
