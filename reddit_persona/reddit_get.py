@@ -1,4 +1,3 @@
-import simplejson as json
 from os.path import join, dirname
 from os import path
 from pprint import pprint
