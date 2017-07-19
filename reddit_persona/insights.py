@@ -2,18 +2,14 @@ import indicoio
 import os.path as path
 import os
 import sys
-from reddit_persona import io_helper
-from reddit_persona import keycheck
+from reddit_persona import keycheck, io_helper, memberberry
 
 meta_dict = {}
 
 
 def execute(USERNAME, target, refresh):
 
-    r_data = io_helper.read_raw(USERNAME, target)
-
-    og = sys.stdout
-    fpath = io_helper.out_path(USERNAME, target)
+    r_data = memberberry.Berry.reddit
 
     def analysis(raw='', limit=5, text='', percent=True):
         global meta_dict
@@ -160,12 +156,18 @@ def execute(USERNAME, target, refresh):
                     percent=i.get('percent', True)
                 )
 
-    with open(fpath, 'w') as outtie:
-        sys.stdout = outtie
+    from contextlib import redirect_stdout
+    import io
+    f = io.StringIO()
+    with redirect_stdout(f):
+
         print(target + USERNAME)
         print()
         show([kw, pla, big5, emo, sen, pol, mbti, tt])
-        # Karma(USERNAME)
+    memberberry.Berry.indicoResults = f.getvalue()
 
-        sys.stdout = og
-    return
+    # TODO: Fix Karma Function
+    # Karma(USERNAME)
+
+
+""" TODO: Cut away 75% of the code without losing any functionality. """

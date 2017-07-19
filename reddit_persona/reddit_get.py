@@ -12,8 +12,7 @@ class reddit:
     def __init__(self, name, target):
         self.name = name
         self.target = target
-        base_dir = path.join(getcwd(), path.dirname(__file__))
-        creds = json.load(open(base_dir + '/' + 'reddit_creds.json'))
+        creds = json.load(open(io_helper.basePath + '/' + 'reddit_creds.json'))
         self.user_agent = praw.Reddit(**creds)
 
     def get_user(self):
@@ -58,6 +57,9 @@ def report(username, target):
     return str(payload)
 
 
+from reddit_persona.memberberry import Berry
+
+
 def user_text(refresh=False, user=False, sub=False):
 
     if user:
@@ -68,8 +70,8 @@ def user_text(refresh=False, user=False, sub=False):
         target = 'sub'
     u = accountname + '_raw.txt'
 
-    memoize = path.join(io_helper.usr_path, target, u)
+    # memoize = path.join(io_helper.usr_path, target, u)
 
-    with open(memoize, 'w') as r_data:
-        nameOut = report(accountname, target)
-        r_data.write(nameOut)
+    # with open(memoize, 'w') as r_data:
+    Berry.reddit = report(accountname, target)
+    # r_data.write(nameOut)

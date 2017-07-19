@@ -1,0 +1,3 @@
+class Berry:
+    reddit = ''
+    indicoResults = ''

@@ -1,22 +1,11 @@
-from reddit_persona import insights
-from reddit_persona import reddit_get
-from reddit_persona import io_helper
-
-
-def show(USERNAME, target):
-    fpath = io_helper.out_path(USERNAME, target)
-    with open(fpath, 'r') as f:
-        response = ' '.join([line + ' ' for line in f])
-    print(str(response))
+from reddit_persona import insights, io_helper, memberberry, reddit_get
 
 
 def go(target, refresh=60 * 60 * 24):
 
     parse = target.split('/')
     USERNAME = parse[2]
-    if not io_helper.check_time(USERNAME, target, refresh):
-        show(USERNAME, target)
-        return
+
     if parse[1] == 'u':
         target = 'user'
         reddit_get.user_text(user=USERNAME, refresh=refresh)
@@ -33,7 +22,7 @@ def go(target, refresh=60 * 60 * 24):
 
     insights.execute(USERNAME, target, refresh)
 
-    show(USERNAME, target)
+    print(memberberry.Berry.indicoResults)
 
 
 # TODO Add subreddits or descriptions
