@@ -1,11 +1,21 @@
 # Reddit_Persona
-Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from a subreddit or user account. Text is collected via reddit's python API, PRAW, Inights and machine learning is powered by [Indico.io](https://indico.io), for which a free API key is required. The API key allows for 10,000 API calls per month. A fee of $0.006 each applies to additional calls.
+Reddit Persona is a python module that extracts personality insights, sentiment &amp; interests from a user account (Note: subreddit support broke, with `praw` update, fix incoming ).
+
+Text is collected via reddit's python API, PRAW, and NLP is powered by the indico.io API.
 
 ## Setup
-Compatible with Python 2 and 3
-```python
->>> pip install reddit_persona 
+Clone repo and `cd` to main folder
+```command 
+pip install -r reddit_persona/requirements.txt
 ```
+API keys for [reddit](https://praw.readthedocs.io/en/latest/getting_started/configuration/options.html#basic-configuration-options) and [Indicio](https://indico.io/) are required. Indico allows for 10,000 API calls per month, reddit is free of payment.
+
+The Indico api key goes here: `/reddit_persona/indicoKey.txt`.
+
+The Reddit credentials go here: `/reddit_persona/reddit_creds.json`. 
+
+The `reddit_creds_example.json` file gives a template for this as there are several pieces of information to add.
+
 
 
 ## Usage 
@@ -15,18 +25,17 @@ Compatible with Python 2 and 3
 Shell
 ```command
 python -m reddit_persona /u/GovSchwarzenegger
-python -m reddit_persona /r/python
 ```
 
 
 Python 
 ```python
->>> import reddit_persona
->>> governator = reddit_persona.go("/u/GovSchwarzenegger")
->>> print(governator)
->>> #Save to txt
->>> with open('arnold.txt', 'w') as t800:
-...   t800.write(governator)
+import reddit_persona
+governator = reddit_persona.go("/u/GovSchwarzenegger")
+print(governator)
+#Save to txt
+with open('arnold.txt', 'w') as t800:
+   t800.write(governator)
 ```
 
 Requests, especially for subreddits, can take a while. This is due primarily to the reddit API.
@@ -103,7 +112,7 @@ If it breaks or runs out, its free to get your own.
 
 Overwite key:
 ```python
->>> reddit_persona.new_key('your key')
+reddit_persona.new_key('your key')
 ```
 The new key is then verified then saved to disk.
 
