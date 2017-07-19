@@ -6,10 +6,8 @@ __pycache__/
 *pyc
 # C extensions
 settings.json
-
-reddit_creds.json
 *.txt
-
+flit.ini
 # Distribution / packaging
 .Python
 build/

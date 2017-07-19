@@ -1,5 +1,5 @@
 from os.path import join, dirname
-from os import path
+from os import path, getcwd
 from pprint import pprint
 import collections
 import praw
@@ -10,14 +10,13 @@ import json
 class reddit:
 
     def __init__(self, name, target):
-
         self.name = name
         self.target = target
-        creds = json.load(open('./reddit_persona/reddit_creds.json'))
+        base_dir = path.join(getcwd(), path.dirname(__file__))
+        creds = json.load(open(base_dir + '/' + 'reddit_creds.json'))
         self.user_agent = praw.Reddit(**creds)
 
     def get_user(self):
-
         redditor = praw.models.Redditor(self.user_agent, self.name)
 
         def comments():
