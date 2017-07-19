@@ -4,19 +4,10 @@ Reddit Persona is a python module that extracts personality insights, sentiment 
 Text is collected via reddit's python API, `praw`, and NLP is powered by the indico.io API.
 
 ## Setup
-Clone repo and `cd` to main folder
+
 ```command 
-pip install -r reddit_persona/requirements.txt
+pip install reddit_persona
 ```
-API keys for [reddit](https://praw.readthedocs.io/en/latest/getting_started/configuration/options.html#basic-configuration-options) and [Indicio](https://indico.io/) are required. Indico allows for 10,000 API calls per month, reddit is free of payment.
-
-The Indico api key goes here: `./reddit_persona/indicoKey.txt`.
-
-The Reddit credentials go here: `./reddit_persona/reddit_creds.json`. 
-
-The `reddit_creds_example.json` file gives a template for this as there are several pieces of information to add.
-
-
 
 ## Usage 
 
